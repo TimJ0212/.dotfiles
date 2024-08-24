@@ -7,8 +7,7 @@
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
-PS1='[\u@\h \W]\$ '
-
+PS1='[\t]:\[\e[38;5;33m\]\u\[\e[0m\]:\[\e[96m\]\w\[\e[0m\] $?>'
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 HISTCONTROL=ignoreboth

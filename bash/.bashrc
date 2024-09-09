@@ -7,7 +7,6 @@
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
-PS1='[\t]:\[\e[38;5;33m\]\u\[\e[0m\]:\[\e[96m\]\w\[\e[0m\] $?>'
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 HISTCONTROL=ignoreboth
@@ -121,3 +120,8 @@ export PATH=$PATH:/usr/local/go/bin
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
+
+PS1='[\t]:\[\e[38;5;33m\]\u\[\e[0m\]:\[\e[96m\]\w\[\e[0m\] $?>'
+
+# Created by `pipx` on 2024-09-01 06:25:09
+export PATH="$PATH:/home/mrx/.local/bin"

@@ -12,7 +12,12 @@ return {
       require "configs.lspconfig"
     end,
   },
-
+  {
+    "mfussenegger/nvim-jdtls",
+  },
+  {
+    "folke/flash.nvim",
+  },
   {
     "nvim-treesitter/nvim-treesitter",
     oopts = {
@@ -25,6 +30,8 @@ return {
         "java",
         "typescript",
         "python",
+        "angular",
+        "java",
       },
     },
   },

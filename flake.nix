@@ -48,6 +48,7 @@
             ./system/paperless.nix
             ./system/system.nix
             ./system/tmux.nix
+            ./home/home.nix
           ];
         };
       };
@@ -55,7 +56,6 @@
         timj = home-manager.lib.homeManagerConfiguration {
           inherit pkgs;
           modules = [
-            ./home/home.nix
             ./home/apps/anki.nix
             ./home/apps/firefox.nix
             ./home/apps/joplin.nix
@@ -70,7 +70,6 @@
         homelabUser = home-manager.lib.homeManagerConfiguration {
           inherit pkgs;
           modules = [
-            ./home/home.nix
             ./home/git.nix
             ./home/nvim.nix
           ];

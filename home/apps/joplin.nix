@@ -2,7 +2,7 @@
 
 {
 
-  environment.systemPackages = [
+  home.packages = [
     pkgs.joplin-desktop
   ];
 

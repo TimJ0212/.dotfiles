@@ -9,7 +9,6 @@
   home.username = "timj";
   home.homeDirectory = "/home/timj";
 
-
   home.sessionVariables = {
     TERMINAL = "alacritty";
     EDITOR = "nvim";

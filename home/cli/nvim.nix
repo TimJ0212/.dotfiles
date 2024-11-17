@@ -2,7 +2,7 @@
 
 {
 
-  environment.systemPackages = [
+  home.packages = [
     pkgs.ripgrep
     pkgs.gopls
   ];

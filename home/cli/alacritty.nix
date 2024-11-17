@@ -8,7 +8,7 @@
 {
 
   home.packages = [
-    alacritty
+    pkgs.alacritty
     (pkgs.nerdfonts.override { fonts = [ "0xProto" ]; })
   ];
 

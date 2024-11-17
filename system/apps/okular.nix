@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
-{
 
+{
   environment.systemPackages = [
-    pkgs.thunderbird
+    pkgs.libsForQt5.okular
   ];
 }

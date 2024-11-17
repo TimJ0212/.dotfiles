@@ -24,12 +24,15 @@
           modules = [
             ./nixos-hardware-config.nix
             ./clients/nixos.nix
-            ./mods/anki.nix
-            ./mods/bash.nix
-            ./mods/system.nix
-            ./mods/thunderbird.nix
-            ./mods/tmux.nix
-            ./mods/wm.nix
+            ./system/bash.nix
+            ./system/system.nix
+            ./system/tmux.nix
+            ./system/wm.nix
+            ./system/apps/gnome-boxes.nix
+            ./system/apps/kde-connect.nix
+            ./system/apps/localsend.nix
+            ./system/apps/metadata-cleaner.nix
+            ./system/apps/okular.nix
           ];
         };
         homelab = lib.nixosSystem {
@@ -37,13 +40,14 @@
           modules = [
             ./homelab-hardware-config.nix
             ./clients/homelab.nix
-            ./mods/adguardhome.nix
-            ./mods/bash.nix
-            ./mods/jellyfin.nix
-            ./mods/nextcloud.nix
-            ./mods/paperless.nix
-            ./mods/system.nix
-            ./mods/tmux.nix
+            ./system/apps/homepage-dashboard.nix
+            ./system/adguardhome.nix
+            ./system/bash.nix
+            ./system/jellyfin.nix
+            ./system/nextcloud.nix
+            ./system/paperless.nix
+            ./system/system.nix
+            ./system/tmux.nix
           ];
         };
       };
@@ -51,12 +55,24 @@
         timj = home-manager.lib.homeManagerConfiguration {
           inherit pkgs;
           modules = [
-            ./mods/home/home.nix
-            ./mods/home/alacritty.nix
-            ./mods/firefox.nix
-            ./mods/git.nix
-            ./mods/joplin.nix
-            ./mods/nvim.nix
+            ./home/home.nix
+            ./home/apps/anki.nix
+            ./home/apps/firefox.nix
+            ./home/apps/joplin.nix
+            ./home/apps/thunderbird.nix
+            ./home/cli/alacritty.nix
+            ./home/cli/git.nix
+            ./home/cli/nvim.nix
+            ./home/cli/zsh.nix
+          ];
+        };
+
+        homelabUser = home-manager.lib.homeManagerConfiguration {
+          inherit pkgs;
+          modules = [
+            ./home/home.nix
+            ./home/git.nix
+            ./home/nvim.nix
           ];
         };
       };

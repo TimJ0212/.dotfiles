@@ -27,9 +27,9 @@
     ];
   };
 
- # programs.readline = {
+  # programs.readline = {
   #  enable = true;
-   # extraConfig = "\"\\e[A\": history-search-backward\n\"\\e[B\": history-search-forward";
+  # extraConfig = "\"\\e[A\": history-search-backward\n\"\\e[B\": history-search-forward";
   #};
 
   # Allow unfree packages

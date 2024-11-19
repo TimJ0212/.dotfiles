@@ -3,10 +3,11 @@
 {
   services.paperless = {
     enable = true;
-    address = "paperless.local";
+    address = "0.0.0.0";
     port = 28981;
     consumptionDirIsPublic = true;
-    settings = {
+    settings  = {
+      PAPERLESS_URL="http://paperless.local";
       PAPERLESS_CONSUMER_IGNORE_PATTERN = [
         ".DS_STORE/*"
         "desktop.ini"

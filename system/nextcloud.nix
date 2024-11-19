@@ -9,7 +9,7 @@
       adminpassFile = "/etc/admin-pass";
     };
     settings = {
-      trusted_domains = [ "192.168.172.48" ];
+      trusted_domains = [ "nextcloud.local", "192.168.172.48" ];
     };
   };
 

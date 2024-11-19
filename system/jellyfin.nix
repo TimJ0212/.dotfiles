@@ -4,6 +4,7 @@
   services.jellyfin = {
     enable = true;
     openFirewall = true;
+    dataDir = "/media/data/jellyfin";
   };
 
   services.nginx = {

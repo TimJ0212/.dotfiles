@@ -8,6 +8,8 @@
     consumptionDirIsPublic = true;
     settings  = {
       PAPERLESS_URL="http://paperless.local";
+      PAPERLESS_DATA_DIR="/media/documents/paperless/data";
+      PAPERLESS_MEDIA_ROOT="/media/documents/paperless/media";
       PAPERLESS_CONSUMER_IGNORE_PATTERN = [
         ".DS_STORE/*"
         "desktop.ini"

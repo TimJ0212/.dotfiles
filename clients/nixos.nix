@@ -22,4 +22,15 @@
     alsa.support32Bit = true;
     pulse.enable = true;
   };
+
+
+  users.users.timj = {
+    isNormalUser = true;
+    description = "Tim";
+    extraGroups = [
+      "networkmanager"
+      "wheel"
+      "docker"
+    ];
+  };
 }

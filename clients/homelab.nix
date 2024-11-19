@@ -25,4 +25,13 @@
     };
   };
 
+  users.users.timj = {
+    isNormalUser = true;
+    description = "Tim";
+    extraGroups = [
+      "networkmanager"
+      "wheel"
+      "docker"
+    ];
+  };
 }

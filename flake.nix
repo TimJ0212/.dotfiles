@@ -48,7 +48,6 @@
             ./system/paperless.nix
             ./system/system.nix
             ./system/tmux.nix
-            ./home/home.nix
           ];
         };
       };
@@ -60,18 +59,12 @@
             ./home/apps/firefox.nix
             ./home/apps/joplin.nix
             ./home/apps/thunderbird.nix
+            ./home/apps/intellij.nix
             ./home/cli/alacritty.nix
             ./home/cli/git.nix
             ./home/cli/nvim.nix
             ./home/cli/zsh.nix
-          ];
-        };
-
-        homelabUser = home-manager.lib.homeManagerConfiguration {
-          inherit pkgs;
-          modules = [
-            ./home/git.nix
-            ./home/nvim.nix
+            ./home/home.nix
           ];
         };
       };

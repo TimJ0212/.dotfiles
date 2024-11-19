@@ -17,15 +17,6 @@
   # Configure console keymap
   console.keyMap = "de";
 
-  users.users.timj = {
-    isNormalUser = true;
-    description = "Tim";
-    extraGroups = [
-      "networkmanager"
-      "wheel"
-      "docker"
-    ];
-  };
 
   # programs.readline = {
   #  enable = true;
